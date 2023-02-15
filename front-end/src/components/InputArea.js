@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import styles from './InputArea.module.css';
 
 export class InputArea extends Component {
     render() {

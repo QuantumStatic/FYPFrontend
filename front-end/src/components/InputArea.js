@@ -13,9 +13,10 @@ export class InputArea extends Component {
                         <textarea name= "inputText" id="inputText" placeholder="Paste your text here..." cols="40" rows = "5" autoComplete="on" required autoFocus/>
 
                         {/* Upload File Code */}
+                        
                         <br />
 
-                        {/* Submit Button Code */}
+                        {/* Submit/Reset Button Code */}
                         <button type="submit">Submit</button>
                         <button type='reset'>Reset</button>
                     </fieldset>

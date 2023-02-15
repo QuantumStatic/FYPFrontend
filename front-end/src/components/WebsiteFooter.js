@@ -4,7 +4,9 @@ export class WebsiteFooter extends Component {
     render() {
         return (
             <React.Fragment>
-                <div>WebsiteFooter</div>
+                <footer>   
+                    <div>WebsiteFooter</div>
+                </footer>
             </React.Fragment>
         );
     }

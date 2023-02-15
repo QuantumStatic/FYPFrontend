@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styles from './InputArea.module.css';
+import styles from './InputArea.module.css'; 
 
 export class InputArea extends Component {
     render() {
@@ -8,18 +8,18 @@ export class InputArea extends Component {
                 
                 <form action="https://httpbin.org/get" method="get">
                     <fieldset>
-                        <legend>Input Area</legend>
-                        {/* Text Box Code */}
-                        <label htmlFor = "inputText" /> 
-                        <textarea name= "inputText" id="inputText" placeholder="Paste your text here..." cols="40" rows = "5" autoComplete="on" required autoFocus/>
+                        <legend align="left">Input Area</legend>
+                                {/* Text Box Code */}
+                                <label htmlFor = "inputText" /> 
+                                <textarea name= "inputText" id="inputText" placeholder="Paste your text here..." autoComplete="on" required autoFocus/>
 
-                        {/* Upload File Code */}
-                        
-                        <br />
+                                {/* Upload File Code */}
+                                
+                                <br />
 
-                        {/* Submit/Reset Button Code */}
-                        <button type="submit">Submit</button>
-                        <button type='reset'>Reset</button>
+                                {/* Submit/Reset Button Code */}
+                                <button type="submit">Submit</button>
+                                <button type='reset'>Reset</button>
                     </fieldset>
                 </form>
                 

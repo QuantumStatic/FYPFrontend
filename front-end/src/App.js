@@ -10,11 +10,27 @@ import WebsiteFooter from './components/WebsiteFooter';
 function App() {
   return (
     <div className="App">
-      <WebsiteHeader />
-      <InputBox />
-      <ArrowPointer />
-      <OutputBox />
-      <WebsiteFooter />
+      
+      <section id = "WebsiteHeader">
+        <WebsiteHeader />
+      </section>
+      
+      <section id = "InputBox">
+        <InputBox />
+      </section>
+
+      <section id = "ArrowPointer">
+        <ArrowPointer />
+      </section>
+
+      <section id = "OutputBox">
+        <OutputBox />
+      </section>
+
+      <section id = "WebsiteFooter">
+        <WebsiteFooter />
+      </section>
+    
     </div>
   );
 }

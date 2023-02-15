@@ -4,7 +4,7 @@ export class ArrowPointer extends Component {
     render() {
         return (
             <React.Fragment>
-                <div>ArrowPointer</div>
+                <p>ArrowPointer</p>
             </React.Fragment>
         );
     }

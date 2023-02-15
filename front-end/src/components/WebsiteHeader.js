@@ -5,7 +5,7 @@ export class WebsiteHeader extends Component {
         return (
             <React.Fragment>
                 <header>
-                    <h1>Debias News Articles</h1>
+                    <h1>De-bias News Articles</h1>
                 </header>
             </React.Fragment>
         );

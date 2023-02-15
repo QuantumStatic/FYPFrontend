@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import WebsiteHeader from './components/WebsiteHeader';
-import InputBox from './components/InputBox';
+import InputArea from './components/InputArea';
 import ArrowPointer from './components/ArrowPointer';
 import OutputBox from './components/OutputBox';
 import WebsiteFooter from './components/WebsiteFooter';
@@ -14,9 +14,11 @@ function App() {
       <section id = "WebsiteHeader">
         <WebsiteHeader />
       </section>
+
+      <hr />
       
       <section id = "InputBox">
-        <InputBox />
+        <InputArea />
       </section>
 
       <section id = "ArrowPointer">
@@ -26,6 +28,8 @@ function App() {
       <section id = "OutputBox">
         <OutputBox />
       </section>
+
+      <hr />
 
       <section id = "WebsiteFooter">
         <WebsiteFooter />

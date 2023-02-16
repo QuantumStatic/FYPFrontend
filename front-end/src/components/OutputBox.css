@@ -1,0 +1,19 @@
+#ouputAreaContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+    /* grid-template-columns: repeat(auto-fit, minmax (150px, 1fr)) ; */
+}
+
+#outputTextBox {
+    width: 100%;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #000;
+    padding: 1px; 
+}
+

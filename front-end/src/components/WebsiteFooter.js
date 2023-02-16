@@ -6,7 +6,9 @@ export class WebsiteFooter extends Component {
             <React.Fragment>
                 
                 <footer>   
-                    <div>WebsiteFooter</div>
+                    <div>
+                        <p>Created by JAIN Utkarsh SID:55992915 Email</p>
+                    </div>
                 </footer>
                 
             </React.Fragment>

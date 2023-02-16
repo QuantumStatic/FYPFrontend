@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import styles from './InputArea.module.css'; 
+
 
 export class InputArea extends Component {
     render() {
@@ -18,8 +19,8 @@ export class InputArea extends Component {
                                 <br />
 
                                 {/* Submit/Reset Button Code */}
-                                <button type="submit" class="btn btn-outline-dark">Submit</button>
-                                <button type='reset' class="btn btn-outline-dark">Reset</button>
+                                <button type="submit">Submit</button>
+                                <button type='reset'>Reset</button>
                     </fieldset>
                 </form>
                 

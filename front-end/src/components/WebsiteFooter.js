@@ -7,7 +7,7 @@ export class WebsiteFooter extends Component {
                 
                 <footer>   
                     <div>
-                        <p>Created by JAIN Utkarsh SID:55992915 Email</p>
+                        <p>Created by JAIN Utkarsh SID:55992915 <a href="mailto:uujain2-c@my.cityu.edu.hk">Email</a></p>
                     </div>
                 </footer>
                 

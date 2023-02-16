@@ -17,7 +17,7 @@ function App() {
 
       <hr />
       
-      <section id = "InputBox">
+      <section id = "InputArea">
         <InputArea />
       </section>
 
@@ -25,7 +25,7 @@ function App() {
         <ArrowPointer />
       </section>
 
-      <section id = "OutputBox">
+      <section id = "OutputArea">
         <OutputBox />
       </section>
 

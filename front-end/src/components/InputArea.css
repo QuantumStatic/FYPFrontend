@@ -1,17 +1,26 @@
-form {
-    /* display: flex;
+#inputAreaContainer {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: auto;
+    height: 100%;
     width: 60%;
+    padding: 1%;
+    resize: vertical;
+}
+
+#inputAreaContainerMobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
     height: 100%;
     padding: 1%;
-    resize: inherit; */
-    /* border-color: black;
-    border-width: 1px;
-    border-style: dotted; */
-} 
+    resize: vertical;
+}
 
 
 

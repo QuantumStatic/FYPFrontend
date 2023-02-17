@@ -1,29 +1,18 @@
 import React, { Component } from 'react';
-import styles from './InputArea.module.css'; 
+import './InputArea.css'; 
 import { isMobile } from 'react-device-detect';
 
 
 export class InputArea extends Component {
 
-    getFormStyle() {
-        let style = {
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "center",
-            margin: "auto",
-            height: "100%",
-            padding: "1%",
-            resize: "inherit",
-        };
-        style["width"] = isMobile ? "90%" : "60%";
-        return style;
+    getFormID() {
+        return isMobile? "inputAreaContainerMobile" : "inputAreaContainer";
     }
 
     render() {
         return (
             <React.Fragment>
-                <form style = {this.getFormStyle()} action="https://httpbin.org/get" method="get">
+                <form id= {this.getFormID()} action="https://httpbin.org/get" method="get">
                     <fieldset>
                         <legend align="left">Input Area</legend>
                             {/* Text Box Code */}

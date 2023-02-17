@@ -1,5 +1,5 @@
 form {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -7,11 +7,15 @@ form {
     width: 60%;
     height: 100%;
     padding: 1%;
-    resize: vertical;
+    resize: inherit; */
     /* border-color: black;
     border-width: 1px;
     border-style: dotted; */
-}
+} 
+
+
+
+
 
 fieldset {
     border: thin solid black;

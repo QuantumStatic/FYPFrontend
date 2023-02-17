@@ -5,24 +5,36 @@ import { isMobile } from 'react-device-detect';
 
 export class InputArea extends Component {
 
+    constructor(props) {
+        super(props);
+        this.myRef = React.createRef();
+        this.submitTextToBackend = this.submitTextToBackend.bind(this);
+    }
+
     getFormID() {
         return isMobile? "inputAreaContainerMobile" : "inputAreaContainer";
     }
 
+    submitTextToBackend() {
+        // TODO: Send the text to the backend
+        alert(`Text Submitted to Backend: ${this.myRef.current.value}`)
+    }
+
     render() {
+
         return (
             <React.Fragment>
                 <fieldset id = {this.getFormID()} className="MyFieldset">
                     <legend align="left">Input Area</legend>
-                        <form action="https://httpbin.org/post" method="post">
+                        <form>
                             {/* Text Box Code */}
                             <label htmlFor = "inputText" /> 
-                            <textarea name= "inputText" id="inputText" placeholder="Paste your text here..." autoComplete="on" required autoFocus/>
+                            <textarea name= "inputText" id="inputText" placeholder="Paste your text here..."  ref={this.myRef} autoComplete="on" required autoFocus/>
 
                             <br />
 
                             {/* Submit/Reset Button Code */}
-                            <button type="submit">Submit</button>
+                            <button type="submit" formNoValidate formAction = "" onClick = {this.submitTextToBackend}>Submit</button>
                             <button type='reset'>Reset</button>
                         </form>
                     

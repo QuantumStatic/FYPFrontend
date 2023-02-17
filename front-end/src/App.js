@@ -9,7 +9,7 @@ import WebsiteFooter from './components/WebsiteFooter';
 
 function App() {
   return (
-    <div className="Content App">
+    <div className="App">
 
       <section id = "WebsiteHeader">
         <WebsiteHeader />
@@ -17,24 +17,24 @@ function App() {
 
       <hr />
 
-      <section id = "InputArea">
-        <InputArea />
-      </section>
+      <div id = "myAppBody">
+        <section id = "InputArea">
+          <InputArea />
+        </section>
 
-      <section id = "ArrowPointer">
-        <ArrowPointer />
-      </section>
+        <section id = "ArrowPointer">
+          <ArrowPointer />
+        </section>
 
-      <section id = "OutputArea">
-        <OutputBox />
-      </section>
+        <section id = "OutputArea">
+          <OutputBox />
+        </section>
 
-      <hr />
+      </div>
 
       <section id = "WebsiteFooter">
-        <WebsiteFooter />
+          <WebsiteFooter />
       </section>
-
     </div>
   );
 }

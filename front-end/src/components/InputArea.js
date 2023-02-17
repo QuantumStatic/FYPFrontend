@@ -12,22 +12,23 @@ export class InputArea extends Component {
     render() {
         return (
             <React.Fragment>
-                <form id= {this.getFormID()} action="https://httpbin.org/get" method="get">
-                    <fieldset>
-                        <legend align="left">Input Area</legend>
+                <fieldset id = {this.getFormID()} className="MyFieldset">
+                    <legend align="left">Input Area</legend>
+                        <form action="https://httpbin.org/post" method="post">
                             {/* Text Box Code */}
                             <label htmlFor = "inputText" /> 
                             <textarea name= "inputText" id="inputText" placeholder="Paste your text here..." autoComplete="on" required autoFocus/>
 
-                            {/* Upload File Code */}
-                            
                             <br />
 
                             {/* Submit/Reset Button Code */}
                             <button type="submit">Submit</button>
                             <button type='reset'>Reset</button>
-                    </fieldset>
-                </form>
+                        </form>
+                    
+                        {/* Upload File Code */}
+
+                </fieldset>
             </React.Fragment>
         );
     }

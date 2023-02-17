@@ -1,4 +1,5 @@
 import './App.css';
+import "./Main.css";
 
 import WebsiteHeader from './components/WebsiteHeader';
 import InputArea from './components/InputArea';
@@ -8,7 +9,7 @@ import WebsiteFooter from './components/WebsiteFooter';
 
 function App() {
   return (
-    <div className="App">
+    <div className="Content App">
 
       <section id = "WebsiteHeader">
         <WebsiteHeader />

@@ -1,21 +1,11 @@
 #ouputAreaContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
     width: 60%;
-    padding-bottom: 1%;
+    padding:0.4%;
 }
 
 #ouputAreaContainerMobile {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
     width: 90%;
-    padding-bottom: 1%;
+    padding: 2.5%;
 }
 
 #outputTextBox {
@@ -26,5 +16,7 @@
     color: #000;
     padding-bottom: 1px;
 }
+
+
 
 

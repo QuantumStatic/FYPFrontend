@@ -19,16 +19,14 @@ export class OutputBox extends Component {
     render() {
         return (
             <React.Fragment>
-                
-                <div id={this.getOutputAreaContainerID()}>
-                    <fieldset>
-                        <legend align="left">Output Area</legend>
-                        <div id="outputTextBox">
-                            {this.getUnBiasedText()}
-                        </div>
-                    </fieldset>
-                </div>
-                
+
+                <fieldset id={this.getOutputAreaContainerID()} className="MyFieldset">
+                    <legend align="left">Output Area</legend>
+                    <div id="outputTextBox">
+                        {this.getUnBiasedText()}
+                    </div>
+                </fieldset>
+
             </React.Fragment>
         );
     }

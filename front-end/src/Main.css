@@ -1,0 +1,42 @@
+html{
+    height: 100%;
+}
+
+hr {
+    height: 0.4px;
+    color: black;
+    background-color: black;
+}
+
+fieldset {
+    border: thin solid black;
+    /* color tag changed text colour only do it using legend instead*/
+    border-radius: 8px;
+    resize: vertical;
+    background-color:oldlace;
+    padding: 0.5%;
+}
+
+legend {
+    padding:0px 3px;
+    text-transform: capitalize; 
+    resize: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+
+.MyFieldset {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 100%;
+    resize: vertical;
+}
+

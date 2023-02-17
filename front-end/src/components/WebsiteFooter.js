@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './WebsiteFooter.css';
 
 export class WebsiteFooter extends Component {
     render() {

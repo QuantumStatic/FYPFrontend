@@ -6,6 +6,7 @@ import InputArea from './components/InputArea';
 import ArrowPointer from './components/ArrowPointer';
 import OutputBox from './components/OutputBox';
 import WebsiteFooter from './components/WebsiteFooter';
+import MyProvider from './components/MyProvider';
 
 function App() {
   return (
@@ -18,17 +19,19 @@ function App() {
       <hr />
 
       <div id = "myAppBody">
-        <section id = "InputArea">
-          <InputArea />
-        </section>
+        <MyProvider>
+          <section id = "InputArea">
+            <InputArea />
+          </section>
 
-        <section id = "ArrowPointer">
-          <ArrowPointer />
-        </section>
+          <section id = "ArrowPointer">
+            <ArrowPointer />
+          </section>
 
-        <section id = "OutputArea">
-          <OutputBox />
-        </section>
+          <section id = "OutputArea">
+            <OutputBox />
+          </section>
+        </MyProvider>   
 
       </div>
 

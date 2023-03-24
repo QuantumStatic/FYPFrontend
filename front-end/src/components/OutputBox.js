@@ -22,7 +22,7 @@ class OutputBox extends Component {
                 <fieldset id={this.getOutputAreaContainerID()} className="MyFieldset">
                     <legend align="left">Output Area</legend>
                     <div id="outputTextBox">
-                        {this.context.state.message}
+                        {this.context.state.animationRunning ? "Processing your input..." :this.context.state.message}
                     </div>
                 </fieldset>
 

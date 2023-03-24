@@ -1,10 +1,35 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { MContext } from './MyProvider';
+import "./ArrowPointer.css";
 
 export class ArrowPointer extends Component {
+
+    static contextType = MContext;
+
+    constructor(props) {
+        super(props);
+        this.startAnimation = this.startAnimation.bind(this);
+    }
+
+    startAnimation() {
+        if (this.context.state.animationRunning) {
+            setTimeout(() => {this.context.setAnimationRunning(false)}, 1200);
+            return "filled"
+        }
+        return "";
+    }
+    
+
     render() {
         return (
             <React.Fragment>
-                <p>ArrowPointer</p>
+                <div className="arrow-container">
+                    <div className={`arrow ${this.startAnimation()}`}>
+                        <div className="arrow-top" />
+                        <div className="arrow-middle" />
+                        <div className="arrow-bottom" />
+                    </div>
+                </div>
             </React.Fragment>
         );
     }

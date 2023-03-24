@@ -40,11 +40,12 @@ export class InputArea extends Component {
         console.log(`Sending ${this.textAreaRef.current.value} to backend`)
 
         try {
+            this.context.setAnimationRunning(true);
             const processedResponse = await this.postData('http://127.0.0.1:5000/sendText', data);
             console.log(`Server responded with ${processedResponse}`);
             this.context.setMessage(processedResponse.length > 0 ? processedResponse : "Something went wrong. Please try again later.");
         } catch (error) {
-            this.context.setMessage("Something went wrong, data could not be sent to the backend. Please try again later.");
+            this.context.setMessage("Something went wrong, data could not be sent to the server. Please try again later.");
         } 
     }
 

@@ -1,5 +1,6 @@
 import './App.css';
 import "./Main.css";
+import { isMobile } from 'react-device-detect';
 
 import WebsiteHeader from './components/WebsiteHeader';
 import InputArea from './components/InputArea';
@@ -7,6 +8,10 @@ import ArrowPointer from './components/ArrowPointer';
 import OutputBox from './components/OutputBox';
 import WebsiteFooter from './components/WebsiteFooter';
 import MyProvider from './components/MyProvider';
+
+function getArrowPointerID() {
+  return isMobile? "ArrowPointerMobile" : "ArrowPointer";
+}
 
 function App() {
   return (
@@ -24,7 +29,7 @@ function App() {
             <InputArea />
           </section>
 
-          <section id = "ArrowPointer">
+          <section id = {getArrowPointerID()}>
             <ArrowPointer />
           </section>
 

@@ -6,7 +6,7 @@ export class WebsiteHeader extends Component {
             <React.Fragment>
                 
                 <header>
-                    <h1>De-bias News Articles</h1>
+                    <h1>Un-bias News Articles</h1>
                 </header>
                 
             </React.Fragment>

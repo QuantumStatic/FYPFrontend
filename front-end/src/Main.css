@@ -15,7 +15,6 @@ fieldset {
     /* color tag changed text colour only do it using legend instead*/
     border-radius: 8px;
     resize: vertical;
-    background-color:oldlace;
     padding: 0.5%;
 }
 
@@ -34,5 +33,15 @@ legend {
     margin: auto;
     height: 100%;
     resize: vertical;
+    background-color:blanchedalmond;
 }
 
+#ArrowPointer {
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+}
+
+#ArrowPointerMobile {
+    padding-top: 5%;
+    padding-bottom: 2.5%;
+}

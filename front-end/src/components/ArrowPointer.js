@@ -13,7 +13,6 @@ export class ArrowPointer extends Component {
 
     startAnimation() {
         if (this.context.state.animationRunning) {
-            setTimeout(() => {this.context.setAnimationRunning(false)}, 1200);
             return "filled"
         }
         return "";

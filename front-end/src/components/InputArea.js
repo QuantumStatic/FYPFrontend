@@ -41,12 +41,14 @@ export class InputArea extends Component {
 
         try {
             this.context.setAnimationRunning(true);
+            // const processedResponse = await this.postData('https://quantumstatic.pythonanywhere.com/sendText', data);
             const processedResponse = await this.postData('http://127.0.0.1:5000/sendText', data);
             console.log(`Server responded with ${processedResponse}`);
             this.context.setMessage(processedResponse.length > 0 ? processedResponse : "Something went wrong. Please try again later.");
-        } catch (error) {
+        } catch {
             this.context.setMessage("Something went wrong, data could not be sent to the server. Please try again later.");
-        } 
+        }
+        this.context.setAnimationRunning(false);
     }
 
     render() {
